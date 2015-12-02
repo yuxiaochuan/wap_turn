@@ -1,0 +1,510 @@
+
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>按疾病找医生_好大夫在线</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="apple-itunes-app" content="app-id=919502358">
+    <meta name="handheldfriendly" content="true"/>
+    <meta name="application-name" content="好大夫在线"/>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-title" content="按疾病找医生_好大夫在线">
+    <link rel="apple-touch-icon-precomposed" href="http://i1.hdfimg.com/touch/images/icon_touch_new.png" />
+    <link href="http://i1.hdfimg.com/touch/css/base_t.8d7f622c.css" rel="stylesheet" type="text/css">
+    <link href="http://i1.hdfimg.com/touch/css/touch.bf4f0de6.css" rel="stylesheet" type="text/css">
+    <link href="http://i1.hdfimg.com/touch/css/m_newcss.1d32203e.css" rel="stylesheet" type="text/css">
+    <link href="http://i1.hdfimg.com/apptransform/css/demo.css" rel="stylesheet" type="text/css">
+    <link href="http://i1.hdfimg.com/apptransform3/css/turnapp3.css" rel="stylesheet" type="text/css">
+    <link href="http://i1.hdfimg.com/apptransform4/css/turnapp4.css" rel="stylesheet" type="text/css">
+    <link href="http://i1.hdfimg.com/doctorzone/css/doctorpostpictures.c2e5161c.css" rel="stylesheet" type="text/css">
+    <link href="http://i1.hdfimg.com/touch/css/touch_tag.a0c845ac.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://i1.hdfimg.com/touch/css/touch_change_v1.f00b204e.css" />
+    <link href="http://i1.hdfimg.com/touch/css/base_t.css" rel="stylesheet" type="text/css">
+    <link href="http://i1.hdfimg.com/ssi/css/generalpurpose.0.1.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://i1.hdfimg.com/ssi/mobilefront/css/pay.b74afe56.css" />
+    <link rel="stylesheet" type="text/css" href="http://i1.hdfimg.com/apptransform4/css/consult-process.css"/>
+    <!--108新增的css-->
+    <link href="http://i1.hdfimg.com/touch/css/zixunjilu.css" rel="stylesheet" type="text/css">
+    <!--结束-->
+
+    <!--wap五期-->
+    <link rel="stylesheet" type="text/css" href="http://i1.hdfimg.com/apptrans5/css/app_trun5num.css?20151127" />
+    <!--wap五期-->
+    <!--wap产品优化-->
+    <link rel="stylesheet" type="text/css" href="http://i1.hdfimg.com/apptransproductweb/css/wap_down_optimize.css" />
+    <!--wap产品优化-->
+
+    <!--wap20151201-->
+    <link rel="stylesheet" type="text/css" href="css/wap_turn_change03.css" />
+    <!--wap20151201-->
+
+    <link href="http://i1.hdfimg.com/touch/css/orderForm_new.css" rel="stylesheet" type="text/css">
+    <script src="http://i1.hdfimg.com/js/jquery-1.4.2.min.js?20140409" type="text/javascript"></script>
+    <script src="http://i1.hdfimg.com/apptransform3/js/turnapp3.js" type="text/javascript"></script>
+    <script src="http://i1.hdfimg.com/touch/js/touch.58d8bde9.js" type="text/javascript"></script>
+    <script src="http://i1.hdfimg.com/js/jquery-ui-1.8/js/jquery-ui-1.8.custom.min.js" type="text/javascript"></script>
+    <script src="http://i1.hdfimg.com/js/jquery.jplayer.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="http://i1.hdfimg.com/touch/css/dpstyle.css" />
+    <link rel="stylesheet" type="text/css" href="http://i1.hdfimg.com/touch/css/zixun_alertcss.css"/>
+
+    <style type="text/css">
+        .fixbars{position: fixed;bottom: 0; left: 0;width: 100%; height: 45px; overflow: hidden;z-index: 999999;}
+        .fixbars li a{float: left; box-sizing: border-box; width: 24%; height: 44px; line-height: 44px; border-right: 1px solid #b2b2b2;border-top: 1px solid #b2b2b2;font-size: 16px; text-align: center;background-color: #f9f9f9; opacity: .9;color: #0f82fe;}
+        .fixbars li.last a{width:28%; border-right: none;}
+        .gift_liu a{display: block; background:#eeeeee url(http://i1.hdfimg.com/touch/images/rarrowoff.png) no-repeat 96% center; background-size: 3%; height: 30px;padding: 10px 0; border-radius: 5px; margin: 10px 10px 10px 15px;font-size: 14px;line-height: 1.2;color: #000;}
+        .gift_liu span{float: left; width: 28px;height: 28px;background: #ff8c28 url(http://i1.hdfimg.com/touch/images/gift.png) no-repeat center;background-size: 68%;border-radius: 100%; margin:0 10px;}
+    </style>
+    <script type="text/javascript">
+        var canUpload = "1";
+        $(function(){
+
+            var $lis = $(".fixbars").find("ul").find("li");
+            var length =$lis.length;
+            if(length == 3)
+            {
+                $lis.find("a").css("width","33.33%");
+            }
+            if(length == 2)
+            {
+                $lis.find("a").css("width","50%");
+            }
+            if(length == 1)
+            {
+                $lis.find("a").css("width","100%");
+            }
+        });
+
+
+    </script>
+    <style>
+        .h1_style_faculty{
+            font-size:15px;
+            font-weight:normal;
+        }
+        .h1_style{
+            font-size:16px;
+            font-weight:normal;
+        }
+        .h2_style{
+            font-size:16px;
+            font-weight:normal;
+        }
+        .inline_h1_style{
+            display:inline;
+            font-size:14px;
+            font-weight:normal;
+            line-height:28px;
+        }
+    </style>
+    <script type="text/javascript">var _czc = _czc || [];_czc.push(["_setAccount",  "1256706712"]);</script>
+</head>
+<body style="background-color: #f0f0f0;">
+<div class="head_tc">
+    <a class="goback" href="javascript:history.go(-1);" title="返回上页"><span>返回</span></a>
+    <div class="head_tit" >按疾病找医生</div>
+    <a href="javascript:;" class="oc_list_new" id="cnzz_daohang201"><span class="red_out">导航<i id="redpoint" class=""></i>
+  </span></a>
+</div>
+<link href="http://i1.hdfimg.com/touch/css/mtop_new_nav.css?20151124" rel="stylesheet" type="text/css">
+<script src="http://i1.hdfimg.com/touch/js/head_search.js" type="text/javascript" ></script>
+<div class="black_bg"></div>
+<div class="head_tc_nav_new" style="display: none">
+    <form class="clearfix" action="http://m.haodf.com/touch/search/search" method="GET" id="uniqueSearchForm20151125" accept-charset="GBK">
+        <div class="text"><div class="in_out"><input id="uniqueKeyword20151125" type="text" placeholder="医院名、疾病名或医生姓名" class="head_tc_nav_new_input" name="key"/></div></div>
+        <div class="sub"><input type="button" value="搜索" onclick="return uniqueSearchCheck20151125();"/></div>
+    </form>
+
+    <div class="search_dor clearfix">
+        <a href="http://m.haodf.com/touch/province/list.htm" class="anyiyuan" id="cnzz_yiyuan203">按医院找医生</a>
+        <a href="http://m.haodf.com/touch/jibing/list.htm" class="anjibing" id="cnzz_jibing204">按疾病找医生</a>
+    </div>
+
+    <div class="three_btn clearfix">
+        <a href="http://m.haodf.com/touch/newcase/askguidepage" id="cnzz_zixun205"><img src="http://i1.hdfimg.com/touch/images/mnav_newbtn_zaixian.png" width="90"/></a>
+        <a href="http://m.haodf.com/touch/case/callin" id="cnzz_dianhua206"><img src="http://i1.hdfimg.com/touch/images/mnav_newbtn_dianhua.png" width="90"/></a>
+        <a href="http://m.haodf.com/touch/booking/servicedisplaylayer" id="cnzz_jihao207"><img src="http://i1.hdfimg.com/touch/images/mnav_newbtn_jiahao.png" width="90"/></a>
+    </div>
+
+    <div class="three_a clearfix">
+        <a href="/touch" class="" id="cnzz_shouye208">首页</a>
+        <a href="http://m.haodf.com/touch/disease/diseasepopularscience" class=" " id="cnzz_zhishi209">疾病知识</a>
+        <a href="http://m.haodf.com/p" class=" " id="cnzz_xizai210">下载客户端</a>
+    </div>
+    <div id="percenter" >
+    </div>
+
+    <div class="battom_waitao"><div class="bottom_bac"></div></div>
+    <div class="arrow"></div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        if(getCookie('NAVTOUCH')==""){
+            $('#redpoint').addClass('red_new');
+        }
+    });
+    $(function(){
+        $.post('/touch/index/ajaxGetUserName', {}, function (data){
+            if(data != null && data!='' ){
+                $('#percenter').attr('class','per_center') ;
+                $('#percenter').height(30);
+                $('#percenter').html(
+                        '<a href="http://m.haodf.com/touch/user/index">' +
+                        data + '的个人中心'+
+                        '<span class="num" id="unpay" style="display:none;"></span></a>'
+                );
+            }else{
+                $('#percenter').attr('class','per_center_login') ;
+                $('#percenter').height(30);
+                $('#percenter').html(
+                        '<a href="http://m.haodf.com/touch/user/loginbymobile">登录</a>'+
+                        '<a href="http://m.haodf.com/touch/user/register?forward=">注册</a>'
+                );
+            }
+        });
+
+
+    });
+
+    $(".oc_list_new").click(function() {
+        if($('#redpoint').attr('class')=='red_new'){
+            $.post('/touch/index/ajaxAddTouchCookie');
+            if($('#unpay').html()!=""&&$('#unpay').html()!=null) {
+                $('#redpoint').attr('class','red_dian') ;
+            }else{
+                $('#redpoint').attr('class','') ;
+            }
+        }
+        $(".black_bg").show();
+        $(".head_tc_nav_new").show();
+        $(".oc_list_indialog").click(function() {
+            $(".black_bg").hide();
+            $(".head_tc_nav_new").hide();
+        })
+        $(".black_bg").click(function() {
+            $(this).hide();
+            $(".head_tc_nav_new").hide();
+        })
+    });
+
+    function uniqueSearchCheck20151125() {
+        var head_kw = $('#uniqueKeyword20151125').val().trim();
+        if (head_kw == '' || head_kw == '医院名、疾病名或医生姓名') {
+            alert('请输入医院名、疾病名或医生姓名');
+            return false;
+        }
+        $('#uniqueSearchForm20151125').submit();
+    }
+    function getCookie(name)
+    {
+        var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+        if(arr=document.cookie.match(reg))
+            return unescape(arr[2]);
+        else
+            return null;
+    }
+
+</script>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256706712'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1256706712%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">
+    document.getElementById("cnzz_stat_icon_1256706712").style.display = "none";
+    $("#cnzz_daohang201").click(function(){_czc.push(['_trackEvent', '触屏导航栏', '点击导航按钮', '导航按钮', '1', '101201']);});
+    $("#cnzz_sousuo202").click(function(){_czc.push(['_trackEvent', '触屏导航栏', '点击搜索框', '搜索按钮', '1', '101202']);});
+    $("#cnzz_yiyuan203").click(function(){_czc.push(['_trackEvent', '触屏导航栏', '需要按照医院搜索医生', '按医院找医生按钮', '1', '101203']);});
+    $("#cnzz_jibing204").click(function(){_czc.push(['_trackEvent', '触屏导航栏', '需要按照疾病搜索医生', '按疾病找医生按钮', '1', '101204']);});
+    $("#cnzz_zixun205").click(function(){_czc.push(['_trackEvent', '触屏导航栏', '开始在线咨询', '在线咨询按钮', '1', '101205']);});
+    $("#cnzz_dianhua206").click(function(){_czc.push(['_trackEvent', '触屏导航栏', '开始电话咨询', '电话咨询按钮', '1', '101206']);});
+    $("#cnzz_jihao207").click(function(){_czc.push(['_trackEvent', '触屏导航栏', '开始预约加号', '预约加号按钮', '1', '101207']);});
+    $("#cnzz_shouye208").click(function(){_czc.push(['_trackEvent', '触屏导航栏', '点击后返回首页', '首页按钮', '1', '101208']);});
+    $("#cnzz_zhishi209").click(function(){_czc.push(['_trackEvent', '触屏导航栏', '点击查看疾病知识', '疾病知识按钮', '1', '101209']);});
+    $("#cnzz_xizai210").click(function(){_czc.push(['_trackEvent', '触屏导航栏', '点击下载客户端', '下载客户端按钮', '1', '101210']);});
+</script>
+
+
+<div class="mt10 ml10 mr10 bg_w b_ra5 mb50">
+    <div class="bb_e f_t19 keshi_title blue_06c normal_t">儿科学</div>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <li><a href="/touch/jibing/erkezonghe/list.htm">儿科</a></li>
+        <li><a href="/touch/jibing/xinshengerke/list.htm">新生儿科</a></li>
+        <li><a href="/touch/jibing/xiaoerhuxike/list.htm">小儿呼吸科</a></li>
+        <li><a href="/touch/jibing/xiaoerxiaohuake/list.htm">小儿消化科</a></li>
+        <li><a href="/touch/jibing/xiaoeryingyangbaojianke/list.htm">小儿营养保健科</a></li>
+        <li><a href="/touch/jibing/xiaoershenjingneike/list.htm">小儿神经内科</a></li>
+        <li><a href="/touch/jibing/xiaoerxinneike/list.htm">小儿心内科</a></li>
+        <li><a href="/touch/jibing/xiaoershenneike/list.htm">小儿肾内科</a></li>
+        <li><a href="/touch/jibing/xiaoerneifenmike/list.htm">小儿内分泌科</a></li>
+        <li><a href="/touch/jibing/xiaoermianyike/list.htm">小儿免疫科</a></li>
+        <li><a href="/touch/jibing/xiaoerpifuke/list.htm">小儿皮肤科</a></li>
+        <li><a href="/touch/jibing/xiaoererbihouke/list.htm">小儿耳鼻喉</a></li>
+        <li><a href="/touch/jibing/xiaoerxueyeke/list.htm">小儿血液科</a></li>
+        <li><a href="/touch/jibing/xiaoerganranke/list.htm">小儿感染科</a></li>
+        <li><a href="/touch/jibing/xiaoerjingshenke/list.htm">小儿精神科</a></li>
+        <li><a href="/touch/jibing/xiaoerfuke/list.htm">小儿妇科</a></li>
+        <li><a href="/touch/jibing/xiaoerwaike/list.htm">小儿外科</a></li>
+        <li><a href="/touch/jibing/xiaoerxinwaike/list.htm">小儿心外科</a></li>
+        <li><a href="/touch/jibing/xiaoerxiongwaike/list.htm">小儿胸外科</a></li>
+        <li><a href="/touch/jibing/xiaoerguke/list.htm">小儿骨科</a></li>
+        <li><a href="/touch/jibing/xiaoerminiaowaike/list.htm">小儿泌尿科</a></li>
+        <li><a href="/touch/jibing/xiaoershenjingwaike/list.htm">小儿神经外科</a></li>
+        <li><a href="/touch/jibing/xiaoerkangfuke/list.htm">小儿康复科</a></li>
+        <li><a href="/touch/jibing/xiaoerjizhenke/list.htm">小儿急诊科</a></li>
+        <p class="clear_l"></p>
+    </ul>
+    <div class="bb_e f_t19 keshi_title blue_06c normal_t">妇产科学</div>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <li><a href="/touch/jibing/fuke/list.htm">妇科</a></li>
+        <li><a href="/touch/jibing/chanke/list.htm">产科</a></li>
+        <li><a href="/touch/jibing/fukeneifenmi/list.htm">妇科内分泌</a></li>
+        <li><a href="/touch/jibing/fuminiaoke/list.htm">妇泌尿科</a></li>
+        <li><a href="/touch/jibing/chanqianjianchake/list.htm">产前诊断科</a></li>
+        <li><a href="/touch/jibing/yichuanzixunke/list.htm">遗传咨询科</a></li>
+        <li><a href="/touch/jibing/fuchanke-jisheng/list.htm">计划生育科</a></li>
+        <li><a href="/touch/jibing/fuchankezonghe/list.htm">妇产科</a></li>
+        <p class="clear_l"></p>
+    </ul>
+    <div class="bb_e f_t19 keshi_title blue_06c normal_t">内科</div>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <li><a href="/touch/jibing/xinxueguanneike/list.htm">心血管内科</a></li>
+        <li><a href="/touch/jibing/shenjingneike/list.htm">神经内科</a></li>
+        <li><a href="/touch/jibing/xiaohuaneike/list.htm">消化内科</a></li>
+        <li><a href="/touch/jibing/neifenmike/list.htm">内分泌科</a></li>
+        <li><a href="/touch/jibing/mianyineike/list.htm">免疫科</a></li>
+        <li><a href="/touch/jibing/huxineike/list.htm">呼吸科</a></li>
+        <li><a href="/touch/jibing/shenbingneike/list.htm">肾病内科</a></li>
+        <li><a href="/touch/jibing/xueyeneike/list.htm">血液科</a></li>
+        <li><a href="/touch/jibing/ganranneike/list.htm">感染内科</a></li>
+        <li><a href="/touch/jibing/biantaifanyingke/list.htm">过敏反应科</a></li>
+        <li><a href="/touch/jibing/laonianbingneike/list.htm">老年病科</a></li>
+        <li><a href="/touch/jibing/putongneike/list.htm">普通内科</a></li>
+        <p class="clear_l"></p>
+    </ul>
+    <div class="bb_e f_t19 keshi_title blue_06c normal_t">外科</div>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <li><a href="/touch/jibing/shenjingwaike/list.htm">神经外科</a></li>
+        <li><a href="/touch/jibing/gongnengshenjingwaike/list.htm">功能神经外科</a></li>
+        <li><a href="/touch/jibing/xinxueguanwaike/list.htm">心血管外科</a></li>
+        <li><a href="/touch/jibing/xiongwaike/list.htm">胸外科</a></li>
+        <li><a href="/touch/jibing/zhengxingwaike/list.htm">整形科</a></li>
+        <li><a href="/touch/jibing/ruxianwaike/list.htm">乳腺外科</a></li>
+        <li><a href="/touch/jibing/miniaowaike/list.htm">泌尿外科</a></li>
+        <li><a href="/touch/jibing/gandanwaike/list.htm">肝胆外科</a></li>
+        <li><a href="/touch/jibing/gangchangwaike/list.htm">肛肠科</a></li>
+        <li><a href="/touch/jibing/xueguanwaike/list.htm">血管外科</a></li>
+        <li><a href="/touch/jibing/qiguanyizhi/list.htm">器官移植</a></li>
+        <li><a href="/touch/jibing/weichuangwaike/list.htm">微创外科</a></li>
+        <li><a href="/touch/jibing/putongwaike/list.htm">普外科</a></li>
+        <p class="clear_l"></p>
+    </ul>
+    <a href="http://m.haodf.com/touch/jibing/shengzhiyixuezhongxin/list.htm" style="display:block; color:#333"><div class="bb_e f_t19 keshi_title blue_06c pl15">生殖中心</div></a>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <p class="clear_l"></p>
+    </ul>
+    <div class="bb_e f_t19 keshi_title blue_06c normal_t">骨外科</div>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <li><a href="/touch/jibing/zuhuaiwaike/list.htm">足踝外科</a></li>
+        <li><a href="/touch/jibing/guwaike/list.htm">骨科</a></li>
+        <li><a href="/touch/jibing/jizhuwaike/list.htm">脊柱外科</a></li>
+        <li><a href="/touch/jibing/shouwaike/list.htm">手外科</a></li>
+        <li><a href="/touch/jibing/chuangshangguke/list.htm">创伤骨科</a></li>
+        <li><a href="/touch/jibing/guguanjieke/list.htm">骨关节科</a></li>
+        <li><a href="/touch/jibing/jiaoxingguke/list.htm">矫形骨科</a></li>
+        <p class="clear_l"></p>
+    </ul>
+    <div class="bb_e f_t19 keshi_title blue_06c normal_t">眼科学</div>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <li><a href="/touch/jibing/yankezonghe/list.htm">眼科</a></li>
+        <li><a href="/touch/jibing/xiaoeryanke/list.htm">小儿眼科</a></li>
+        <li><a href="/touch/jibing/yandizu/list.htm">眼底</a></li>
+        <li><a href="/touch/jibing/jiaomozu/list.htm">角膜科</a></li>
+        <li><a href="/touch/jibing/qingguangyanzu/list.htm">青光眼</a></li>
+        <li><a href="/touch/jibing/baineizhangzu/list.htm">白内障</a></li>
+        <li><a href="/touch/jibing/yanwaishangzu/list.htm">眼外伤</a></li>
+        <li><a href="/touch/jibing/yankuangjizhongliuzu/list.htm">眼眶及肿瘤</a></li>
+        <li><a href="/touch/jibing/quguangzu/list.htm">屈光</a></li>
+        <li><a href="/touch/jibing/yanzhengxingzu/list.htm">眼整形</a></li>
+        <li><a href="/touch/jibing/zhongyiyankezu/list.htm">中医眼科</a></li>
+        <p class="clear_l"></p>
+    </ul>
+    <div class="bb_e f_t19 keshi_title blue_06c normal_t">口腔科学</div>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <li><a href="/touch/jibing/kouqiangke-zonghe/list.htm">口腔科</a></li>
+        <li><a href="/touch/jibing/kouqiangke-hemian/list.htm">颌面外科</a></li>
+        <li><a href="/touch/jibing/kouqiangke-zhengji/list.htm">正畸科</a></li>
+        <li><a href="/touch/jibing/kouqiangke-yake/list.htm">牙体牙髓科</a></li>
+        <li><a href="/touch/jibing/kouqiangke-yazhou/list.htm">牙周科</a></li>
+        <li><a href="/touch/jibing/kouqiangke-zhanmo/list.htm">口腔粘膜科</a></li>
+        <li><a href="/touch/jibing/ertongkouqiangke/list.htm">儿童口腔科</a></li>
+        <li><a href="/touch/jibing/kouqiangke-xiufu/list.htm">口腔修复科</a></li>
+        <li><a href="/touch/jibing/kouqiangke-zhongzhi/list.htm">种植科</a></li>
+        <li><a href="/touch/jibing/kouqiangke-tezhen/list.htm">口腔特诊科</a></li>
+        <p class="clear_l"></p>
+    </ul>
+    <div class="bb_e f_t19 keshi_title blue_06c normal_t">耳鼻咽喉头颈科</div>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <li><a href="/touch/jibing/erbihouke/list.htm">耳鼻喉</a></li>
+        <li><a href="/touch/jibing/toujingwaike/list.htm">头颈外科</a></li>
+        <p class="clear_l"></p>
+    </ul>
+    <div class="bb_e f_t19 keshi_title blue_06c normal_t">肿瘤科</div>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <li><a href="/touch/jibing/zhongliuneike/list.htm">肿瘤内科</a></li>
+        <li><a href="/touch/jibing/zhongliuwaike/list.htm">肿瘤外科</a></li>
+        <li><a href="/touch/jibing/zhongliufuke/list.htm">肿瘤妇科</a></li>
+        <li><a href="/touch/jibing/fangliaoke/list.htm">放疗科</a></li>
+        <li><a href="/touch/jibing/guzhongliuke/list.htm">骨肿瘤科</a></li>
+        <li><a href="/touch/jibing/zhongliuzongheke/list.htm">肿瘤综合科</a></li>
+        <p class="clear_l"></p>
+    </ul>
+    <div class="bb_e f_t19 keshi_title blue_06c normal_t">皮肤性病科</div>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <li><a href="/touch/jibing/pifuke/list.htm">皮肤科</a></li>
+        <li><a href="/touch/jibing/xingbingke/list.htm">性病科</a></li>
+        <p class="clear_l"></p>
+    </ul>
+    <a href="http://m.haodf.com/touch/jibing/nanke/list.htm" style="display:block; color:#333"><div class="bb_e f_t19 keshi_title blue_06c pl15">男科</div></a>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <p class="clear_l"></p>
+    </ul>
+    <a href="http://m.haodf.com/touch/jibing/yiliaomeirongke/list.htm" style="display:block; color:#333"><div class="bb_e f_t19 keshi_title blue_06c pl15">皮肤美容</div></a>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <p class="clear_l"></p>
+    </ul>
+    <a href="http://m.haodf.com/touch/jibing/shaoshangke/list.htm" style="display:block; color:#333"><div class="bb_e f_t19 keshi_title blue_06c pl15">烧伤科</div></a>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <p class="clear_l"></p>
+    </ul>
+    <div class="bb_e f_t19 keshi_title blue_06c normal_t">精神心理科</div>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <li><a href="/touch/jibing/jingshenke/list.htm">精神科</a></li>
+        <li><a href="/touch/jibing/xinlizixunke/list.htm">心理咨询科</a></li>
+        <li><a href="/touch/jibing/sifajiandingke/list.htm">司法鉴定科</a></li>
+        <li><a href="/touch/jibing/zhongyijingshenke/list.htm">中医精神科</a></li>
+        <p class="clear_l"></p>
+    </ul>
+    <div class="bb_e f_t19 keshi_title blue_06c normal_t">中医学</div>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <li><a href="/touch/jibing/zhongyifuchanke/list.htm">中医妇产科</a></li>
+        <li><a href="/touch/jibing/zhongyierke/list.htm">中医儿科</a></li>
+        <li><a href="/touch/jibing/zhongyiguke/list.htm">中医骨科</a></li>
+        <li><a href="/touch/jibing/zhongyipifuke/list.htm">中医皮肤科</a></li>
+        <li><a href="/touch/jibing/zhongyineifenmi/list.htm">中医内分泌</a></li>
+        <li><a href="/touch/jibing/zhongyixiaohuake/list.htm">中医消化科</a></li>
+        <li><a href="/touch/jibing/zhongyihuxike/list.htm">中医呼吸科</a></li>
+        <li><a href="/touch/jibing/zhongyishenbingneike/list.htm">中医肾病内科</a></li>
+        <li><a href="/touch/jibing/zhongyimianyineike/list.htm">中医免疫内科</a></li>
+        <li><a href="/touch/jibing/zhongyixinneike/list.htm">中医心内科</a></li>
+        <li><a href="/touch/jibing/zhongyishenjingneike/list.htm">中医神经内科</a></li>
+        <li><a href="/touch/jibing/zhongyizhongliuke/list.htm">中医肿瘤科</a></li>
+        <li><a href="/touch/jibing/zhongyixueyeke/list.htm">中医血液科</a></li>
+        <li><a href="/touch/jibing/zhongyiganbingke/list.htm">中医肝病科</a></li>
+        <li><a href="/touch/jibing/zhongyiwuguanke/list.htm">中医五官科</a></li>
+        <li><a href="/touch/jibing/zhongyinanke/list.htm">中医男科</a></li>
+        <li><a href="/touch/jibing/zhenjiuke/list.htm">针灸科</a></li>
+        <li><a href="/touch/jibing/zhongyianmoke/list.htm">中医按摩科</a></li>
+        <li><a href="/touch/jibing/zhongyiwaike/list.htm">中医外科</a></li>
+        <li><a href="/touch/jibing/zhongyiruxianwaike/list.htm">中医乳腺外科</a></li>
+        <li><a href="/touch/jibing/zhongyigangchangke/list.htm">中医肛肠科</a></li>
+        <li><a href="/touch/jibing/zhongyilaonianbingke/list.htm">中医老年病科</a></li>
+        <li><a href="/touch/jibing/zhongyizongheke/list.htm">中医科</a></li>
+        <p class="clear_l"></p>
+    </ul>
+    <a href="http://m.haodf.com/touch/jibing/zhongxiyijieheke/list.htm" style="display:block; color:#333"><div class="bb_e f_t19 keshi_title blue_06c pl15">中西医结合科</div></a>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <p class="clear_l"></p>
+    </ul>
+    <div class="bb_e f_t19 keshi_title blue_06c normal_t">传染病科</div>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <li><a href="/touch/jibing/ganbingke/list.htm">肝病科</a></li>
+        <li><a href="/touch/jibing/chuanranke/list.htm">传染科</a></li>
+        <li><a href="/touch/jibing/chuanranweizhongshi/list.htm">传染危重室</a></li>
+        <p class="clear_l"></p>
+    </ul>
+    <a href="http://m.haodf.com/touch/jibing/jiehebingke/list.htm" style="display:block; color:#333"><div class="bb_e f_t19 keshi_title blue_06c pl15">结核病科</div></a>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <p class="clear_l"></p>
+    </ul>
+    <div class="bb_e f_t19 keshi_title blue_06c normal_t">介入医学科</div>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <li><a href="/touch/jibing/jieruzhiliaoke/list.htm">介入科</a></li>
+        <p class="clear_l"></p>
+    </ul>
+    <div class="bb_e f_t19 keshi_title blue_06c normal_t">康复医学科</div>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <li><a href="/touch/jibing/liliaoke/list.htm">理疗科</a></li>
+        <li><a href="/touch/jibing/kangfuke/list.htm">康复科</a></li>
+        <p class="clear_l"></p>
+    </ul>
+    <a href="http://m.haodf.com/touch/jibing/yundongyixueke/list.htm" style="display:block; color:#333"><div class="bb_e f_t19 keshi_title blue_06c pl15">运动医学科</div></a>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <p class="clear_l"></p>
+    </ul>
+    <div class="bb_e f_t19 keshi_title blue_06c normal_t">麻醉医学科</div>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <li><a href="/touch/jibing/tengtongke/list.htm">疼痛科</a></li>
+        <li><a href="/touch/jibing/mazuike/list.htm">麻醉科</a></li>
+        <p class="clear_l"></p>
+    </ul>
+    <a href="http://m.haodf.com/touch/jibing/zhiyebingke/list.htm" style="display:block; color:#333"><div class="bb_e f_t19 keshi_title blue_06c pl15">职业病科</div></a>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <p class="clear_l"></p>
+    </ul>
+    <a href="http://m.haodf.com/touch/jibing/difangbingke/list.htm" style="display:block; color:#333"><div class="bb_e f_t19 keshi_title blue_06c pl15">地方病科</div></a>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <p class="clear_l"></p>
+    </ul>
+    <a href="http://m.haodf.com/touch/jibing/yingyangke/list.htm" style="display:block; color:#333"><div class="bb_e f_t19 keshi_title blue_06c pl15">营养科</div></a>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <p class="clear_l"></p>
+    </ul>
+    <div class="bb_e f_t19 keshi_title blue_06c normal_t">医学影像学</div>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <li><a href="/touch/jibing/heyixueke/list.htm">核医学科</a></li>
+        <li><a href="/touch/jibing/fangsheke/list.htm">放射科</a></li>
+        <li><a href="/touch/jibing/chaoshengzhenduanke/list.htm">超声科</a></li>
+        <li><a href="/touch/jibing/yixueyingxiangke/list.htm">医学影像科</a></li>
+        <p class="clear_l"></p>
+    </ul>
+    <a href="http://m.haodf.com/touch/jibing/binglike/list.htm" style="display:block; color:#333"><div class="bb_e f_t19 keshi_title blue_06c pl15">病理科</div></a>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <p class="clear_l"></p>
+    </ul>
+    <div class="bb_e f_t19 keshi_title blue_06c normal_t">其他科室</div>
+    <ul class="keshi_category"><!--dis_n_list-->
+        <li><a href="/touch/jibing/ganbuzhenliaoke/list.htm" >干部诊疗科</a></li>
+        <li><a href="/touch/jibing/tijianke/list.htm" >体检科</a></li>
+        <li><a href="/touch/jibing/zhongzhengjianhushi/list.htm" >重症监护室</a></li>
+        <li><a href="/touch/jibing/jizhenke/list.htm" >急诊科</a></li>
+        <p class="clear_l"></p>
+    </ul>
+</div>
+
+<script>
+    if ("1" && "" && "" && "" == "xiaomi")
+    {
+        $(".goback").click(function(event){
+            event.preventDefault();
+        });
+    }
+</script>
+<!--wap20151201-->
+<div class="index_bottom_change03 clearfix closeid">
+    <p class="text">下载APP，与医生本人直接沟通！</p>
+    <input value="下载>>" type="button" onclick="location.href='http://m.haodf.com/p?fromurl=finddoctorbyjibing'">
+    <div class="close"></div>
+</div>
+<!--wap20151201-->
+<div style="display:none;">
+    <script src="http://s96.cnzz.com/stat.php?id=5285151&web_id=5285151" language="JavaScript"></script>
+</div>
+
+<div style="display:none;">
+    <script type="text/javascript" src="http://i1.hdfimg.com/js/pvstat.js?20140322"></script>
+    <script src="http://s6.cnzz.com/stat.php?id=5285151&web_id=5285151" language="JavaScript"></script>
+    <script src="http://i1.hdfimg.com/touch/js/head_search.js?20151123" type="text/javascript" ></script>
+</div>
+</body>
+</html>
